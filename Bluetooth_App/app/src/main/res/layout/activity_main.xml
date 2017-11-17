@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="optimun.softstarter.MainActivity">
+
+    <Button
+        android:id="@+id/btiniciar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btparar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btiniciar"
+        android:text="Parar"/>
+
+    <Button
+        android:id="@+id/btemergencia"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btparar"
+        android:text="Emergencia"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="31dp"
+        android:max="45"
+        android:layout_below="@+id/txt"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btemergencia"
+        android:layout_toEndOf="@+id/tr"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="5" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/capita"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignStart="@+id/seekBar"
+        android:text="Tempo da Rampa: " />
+
+</RelativeLayout>
